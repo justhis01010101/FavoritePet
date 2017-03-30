@@ -21,6 +21,7 @@
         />
 
     <TextView
+        android:id="@+id/text_quest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/msg_qest"
@@ -31,14 +32,14 @@
     <RadioGroup
         android:id="@+id/rg"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
 
         <RadioButton
             android:id="@+id/radio_dog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pet_dog"
-            android:visibility="invisible"
             />
 
         <RadioButton
@@ -46,7 +47,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pet_fish"
-            android:visibility="invisible"
             />
 
         <RadioButton
@@ -54,9 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pet_kol"
-            android:visibility="invisible"
             />
-
     </RadioGroup>
     <Button
         android:id="@+id/but_ok"
